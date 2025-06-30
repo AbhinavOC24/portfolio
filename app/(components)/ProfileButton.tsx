@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Pfp from "../public/static/Pfp.jpg";
 import { getISTStatus } from "../utils/getTime";

@@ -6,7 +6,7 @@ import localFont from "next/font/local";
 const neueMontreal = localFont({
   src: [
     {
-      path: "./fonts/NeueMontreal-Light.otf", // Changed path
+      path: "./fonts/NeueMontreal-Light.otf",
       weight: "300",
       style: "normal",
     },

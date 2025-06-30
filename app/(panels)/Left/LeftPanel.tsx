@@ -2,6 +2,7 @@ import React from "react";
 import ProfileButton from "@/app/(components)/ProfileButton";
 import DisplayBox from "@/app/(components)/DisplayBox";
 import GifBox from "@/app/(components)/GifBox";
+
 function LeftPanel() {
   return (
     <div className=" h-[725px] w-[381px] ">

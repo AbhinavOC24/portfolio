@@ -4,7 +4,7 @@ import Banner from "../../public/static/Banner.jpg";
 const AboutMe = () => {
   return (
     <div>
-      <Image src={Banner} alt="banner" className="mb-4" />
+      <Image src={Banner} alt="banner" className="mb-4 z-30" />
       <div className="font-family-pp font-bold text-base leading-relaxed">
         <p className="mb-3 leading-5 text-xl">
           Hey, I’m <strong>Abhinav Chauhan</strong>, a Web Developer & Web3

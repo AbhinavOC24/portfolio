@@ -5,6 +5,7 @@ import Image from "next/image";
 import { getISTStatus } from "../utils/getTime";
 import clock from "../public/static/Clock.svg";
 import envelope from "../public/static/envelope.svg";
+import grapes from "../../public/static/grapges.svg";
 
 interface propType {
   type: string;
@@ -25,12 +26,12 @@ function DisplayBox({ type }: propType) {
 
   return (
     <div
-      className={`inline-flex h-[79px] items-center justify-center gap-2.5 pl-[22px] pr-[72px] border-dashed py-0 relative rounded-[19px] overflow-hidden border  border-black ${
+      className={`flex h-[79px] w-[190px] items-center justify-center  pl-[22px] pr-[72px] border-dashed py-0 relative rounded-[19px] overflow-hidden border  border-black ${
         type != "Date" ? "cursor-pointer hover:border-[#803399]" : ""
       }`}
     >
-      <div className="inline-flex flex-col items-start justify-center gap-3 relative flex-[0_0_auto]">
-        <div className="flex w-[53.5px] items-center gap-1.5 relative ">
+      <div className="flex flex-col items-start justify-center gap-3 relative ">
+        <div className="flex  items-center gap-1.5 relative ">
           <Image
             className="relative w-[14px] h-[14px] mt-[-0.25px] mb-[2px] ml-[-0.50px]"
             alt="Clock"
@@ -45,7 +46,7 @@ function DisplayBox({ type }: propType) {
         </div>
 
         <div
-          className={`relative w-fit mb-[2px] [font-family:'Neue_Montreal-Bold',Helvetica] font-bold text-lg tracking-[0] leading-[normal] whitespace-nowrap ${
+          className={`relative w-[90px] mb-[2px] [font-family:'Neue_Montreal-Bold',Helvetica] font-bold text-lg tracking-[0] leading-[normal] whitespace-nowrap ${
             type !== "Date" ? "text-[#803399]" : "text-black"
           } `}
         >
