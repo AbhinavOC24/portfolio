@@ -31,7 +31,8 @@ export default function IconView() {
         return (
           <div
             key={key}
-            className={`flex flex-col items-center p-2 w-24 cursor-pointer rounded
+            className={`flex flex-col items-center 
+              p-4 w-[102px] cursor-pointer rounded
               ${selected === key ? "bg-[#F2E8FC]" : "hover:bg-[#EEE7F6]"}`}
             onClick={(e) => {
               e.stopPropagation();
@@ -49,8 +50,8 @@ export default function IconView() {
               }
             }}
           >
-            <Image src={icon} alt="icon" width={40} height={40} />
-            <div className="mt-1 text-sm text-center break-words">{key}</div>
+            <Image src={icon} alt="icon" width={40} height={40} className="" />
+            <div className="mt-2 text-sm text-center break-words">{key}</div>
           </div>
         );
       })}
