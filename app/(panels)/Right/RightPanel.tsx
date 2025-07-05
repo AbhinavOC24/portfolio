@@ -1,8 +1,11 @@
 "use client";
 import AboutMe from "@/app/(components)/Files/AboutMe";
+import Chatty from "@/app/(components)/Files/Chatty";
 import ChillSpotify from "@/app/(components)/Files/ChillSpotify";
+import Sketchspace from "@/app/(components)/Files/Sketchspace";
 import Tools from "@/app/(components)/Files/Tools";
 import { useViewSettings } from "@/app/store/ViewStore";
+
 import React from "react";
 
 function RightPanel() {
@@ -16,8 +19,11 @@ function RightPanel() {
         return <AboutMe />;
       case "Tools.pdf":
         return <Tools />;
-      // case "pencil":
-      //   return <PencilSettingsSidebar />;
+      case "Sketchspace":
+        return <Sketchspace />;
+      case "Chatty":
+        return <Chatty />;
+
       default:
         return null;
     }

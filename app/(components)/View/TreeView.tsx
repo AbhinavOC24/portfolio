@@ -22,7 +22,7 @@ const fileSystem: FileSystem = {
     },
     Projects: {
       Chatty: "project",
-      Sketchmap: "project",
+      Sketchspace: "project",
     },
   },
   Spotify_playlists: {
