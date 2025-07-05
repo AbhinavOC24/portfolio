@@ -4,7 +4,7 @@ import Image from "next/image";
 import openFolder from "../../public/static/folder_open.svg";
 import closeFolder from "../../public/static/folder_closed.svg";
 import pdf from "../../public/static/pdf.svg";
-import spotify from "../../public/static/Music.svg";
+import music from "../../public/static/Music.svg";
 import Back from "../../public/static/Back.svg";
 import globe from "../../public/static/globe.svg";
 // 🔹 Define file system entry types
@@ -72,19 +72,19 @@ function TreeView() {
         <div key={index} className="w-48 shrink-0 p-1">
           {Object.keys(layer).map((key) => {
             const value = layer[key];
+            let isOpen = false;
+
             const isFolder = typeof value === "object";
             const isFile = value === "file";
             const isMusic = value === "spotify";
             const isProj = value === "project";
             let icon = closeFolder;
-            let isOpen = false;
-
             if (isFolder) {
               isOpen = path[index] === key;
               icon = isOpen ? openFolder : closeFolder;
             }
             if (isFile) icon = pdf;
-            if (isMusic) icon = spotify;
+            if (isMusic) icon = music;
             if (isProj) icon = globe;
 
             return (
