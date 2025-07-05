@@ -15,7 +15,7 @@ export default function Home() {
         <RightPanel />
         <FloatingGrapes />
       </div>
-      <hr className=" border-dashed" />
+      <hr className=" border-dashed mt-[25px]" />
     </>
   );
 }

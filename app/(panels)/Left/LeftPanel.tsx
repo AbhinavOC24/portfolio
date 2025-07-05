@@ -20,7 +20,7 @@ function LeftPanel() {
         development background to craft forward-thinking solutions while staying
         up-to-date with trends.
       </div>
-      <div className="font-family-neue font-bold mt-[105px]">
+      <div className="font-family-neue font-bold mt-[150px]">
         Uttarakhand, IND
       </div>
     </div>
