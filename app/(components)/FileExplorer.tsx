@@ -2,9 +2,9 @@
 import React from "react";
 
 import { useViewSettings } from "../store/ViewStore";
-import IconView from "./IconView";
-import ListView from "./ListView";
-import TreeView from "./TreeView";
+import IconView from "./View/IconView";
+import ListView from "./View/ListView";
+import TreeView from "./View/TreeView";
 function FileExplorer() {
   const view = ["tree", "list", "icon"];
   const { currentView } = useViewSettings();

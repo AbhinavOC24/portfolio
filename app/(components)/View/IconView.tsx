@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { useViewSettings } from "../store/ViewStore";
+import { useViewSettings } from "../../store/ViewStore";
 import Image from "next/image";
-import getCurrentLayer from "../utils/getCurrentLayer";
-import Folder from "../public/static/FOLDER.svg";
-import Music from "../public/static/Music.svg";
-import pdf from "../public/static/pdf.svg";
+import getCurrentLayer from "../../utils/getCurrentLayer";
+import Folder from "../../public/static/FOLDER.svg";
+import Music from "../../public/static/Music.svg";
+import pdf from "../../public/static/pdf.svg";
+
 export default function IconView() {
   const { path, setCurrentPath, setOpenedFile } = useViewSettings();
   const currentLayer = getCurrentLayer(path);

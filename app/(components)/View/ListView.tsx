@@ -1,10 +1,10 @@
 import React from "react";
-import { useViewSettings } from "../store/ViewStore";
+import { useViewSettings } from "../../store/ViewStore";
 import Image from "next/image";
-import openFolder from "../public/static/folder_open.svg";
-import closeFolder from "../public/static/folder_closed.svg";
-import pdf from "../public/static/pdf.svg";
-import spotify from "../public/static/Music.svg";
+import openFolder from "../../public/static/folder_open.svg";
+import closeFolder from "../../public/static/folder_closed.svg";
+import pdf from "../../public/static/pdf.svg";
+import spotify from "../../public/static/Music.svg";
 type FileSystemValue = "file" | "spotify";
 type FileSystemNode = {
   [key: string]: FileSystemNode | FileSystemValue;

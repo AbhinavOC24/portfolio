@@ -1,14 +1,14 @@
 import React from "react";
-import { useViewSettings } from "../store/ViewStore";
+import { useViewSettings } from "../../store/ViewStore";
 import Image from "next/image";
-import openFolder from "../public/static/folder_open.svg";
-import closeFolder from "../public/static/folder_closed.svg";
-import pdf from "../public/static/pdf.svg";
-import spotify from "../public/static/Music.svg";
-import Back from "../public/static/Back.svg";
-
+import openFolder from "../../public/static/folder_open.svg";
+import closeFolder from "../../public/static/folder_closed.svg";
+import pdf from "../../public/static/pdf.svg";
+import spotify from "../../public/static/Music.svg";
+import Back from "../../public/static/Back.svg";
+import globe from "../../public/static/globe.svg";
 // 🔹 Define file system entry types
-type FileSystemEntry = "file" | "spotify" | FileSystem;
+type FileSystemEntry = "file" | "spotify" | "project" | FileSystem;
 interface FileSystem {
   [key: string]: FileSystemEntry;
 }
@@ -20,7 +20,10 @@ const fileSystem: FileSystem = {
       "About_me.pdf": "file",
       "Tools.pdf": "file",
     },
-    Projects: {},
+    Projects: {
+      Chatty: "project",
+      Sketchmap: "project",
+    },
   },
   Spotify_playlists: {
     "Chill.spot": "spotify",
@@ -72,7 +75,7 @@ function TreeView() {
             const isFolder = typeof value === "object";
             const isFile = value === "file";
             const isMusic = value === "spotify";
-
+            const isProj = value === "project";
             let icon = closeFolder;
             let isOpen = false;
 
@@ -82,6 +85,7 @@ function TreeView() {
             }
             if (isFile) icon = pdf;
             if (isMusic) icon = spotify;
+            if (isProj) icon = globe;
 
             return (
               <div
