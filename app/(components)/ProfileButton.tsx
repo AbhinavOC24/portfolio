@@ -1,10 +1,10 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import Pfp from "../public/static/Pfp.jpg";
 import { getISTStatus } from "../utils/getTime";
 function ProfileButton() {
-  const { hour, minute, color } = getISTStatus();
+  const { color } = getISTStatus();
 
   return (
     <div className="rounded-[19px] pl-[18px] pt-[18px] w-full h-[124px] my-shadow flex">

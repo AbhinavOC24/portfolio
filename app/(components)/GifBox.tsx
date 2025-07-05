@@ -4,7 +4,7 @@ import Girantina from "../public/static/girantina.gif";
 function GifBox() {
   return (
     <div className="border w-full h-[198px] border-dashed rounded-[19px] mt-[20px] overflow-clip">
-      <Image src={Girantina} alt="girantina" />
+      <Image src={Girantina} alt="girantina" unoptimized />
     </div>
   );
 }

@@ -5,8 +5,12 @@ import openFolder from "../public/static/folder_open.svg";
 import closeFolder from "../public/static/folder_closed.svg";
 import pdf from "../public/static/pdf.svg";
 import spotify from "../public/static/Music.svg";
+type FileSystemValue = "file" | "spotify";
+type FileSystemNode = {
+  [key: string]: FileSystemNode | FileSystemValue;
+};
 
-const fileSystem = {
+const fileSystem: FileSystemNode = {
   Work: {
     About: {
       "About_me.pdf": "file",
@@ -22,7 +26,7 @@ const fileSystem = {
 function TreeView() {
   const { path, setCurrentPath, openedFile, setOpenedFile } = useViewSettings();
 
-  const renderTree = (node: any, nodePath: string[] = []) => {
+  const renderTree = (node: FileSystemNode, nodePath: string[] = []) => {
     return Object.keys(node).map((key) => {
       const value = node[key];
       const currentFullPath = [...nodePath, key];

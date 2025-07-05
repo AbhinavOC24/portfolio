@@ -5,7 +5,6 @@ import Image from "next/image";
 import { getISTStatus } from "../utils/getTime";
 import clock from "../public/static/Clock.svg";
 import envelope from "../public/static/envelope.svg";
-import grapes from "../../public/static/grapges.svg";
 
 interface propType {
   type: string;
@@ -22,7 +21,7 @@ function DisplayBox({ type }: propType) {
     return () => clearInterval(interval);
   }, []);
 
-  const { hour, minute, day, color } = timeData;
+  const { hour, minute, day } = timeData;
 
   return (
     <div

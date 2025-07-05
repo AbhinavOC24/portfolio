@@ -11,7 +11,7 @@ function FileExplorer() {
 
   return (
     <div>
-      {view[currentView] === "icon" && <IconView files={"files"} />}
+      {view[currentView] === "icon" && <IconView />}
       {view[currentView] === "list" && <ListView />}
       {view[currentView] === "tree" && <TreeView />}
     </div>
