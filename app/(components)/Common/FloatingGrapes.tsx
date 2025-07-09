@@ -1,5 +1,5 @@
 import Image from "next/image";
-import grapes from "../public/static/grapges.svg";
+import grapes from "../../public/static/grapges.svg";
 const FloatingGrapes = () => {
   return (
     <>

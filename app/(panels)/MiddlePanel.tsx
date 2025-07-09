@@ -1,7 +1,7 @@
 import React from "react";
 
 import FileExplorer from "@/app/(components)/FileExplorer";
-import IconViewBox from "@/app/(components)/IconViewBox";
+import IconViewBox from "@/app/(components)/Common/IconViewBox";
 function MiddlePanel() {
   return (
     <div className=" h-[725px] w-[549px]">

@@ -1,9 +1,9 @@
 import Image from "next/image";
-import LineBreak from "./(components)/LineBreak";
-import LeftPanel from "./(panels)/Left/LeftPanel";
-import MiddlePanel from "./(panels)/Middle/MiddlePanel";
-import RightPanel from "./(panels)/Right/RightPanel";
-import FloatingGrapes from "./(components)/FloatingGrapes";
+import LineBreak from "./(components)/Common/LineBreak";
+import LeftPanel from "./(panels)/LeftPanel";
+import MiddlePanel from "./(panels)/MiddlePanel";
+import RightPanel from "./(panels)/RightPanel";
+import FloatingGrapes from "./(components)/Common/FloatingGrapes";
 export default function Home() {
   return (
     <>

@@ -1,7 +1,7 @@
 import React from "react";
-import ProfileButton from "@/app/(components)/ProfileButton";
-import DisplayBox from "@/app/(components)/DisplayBox";
-import GifBox from "@/app/(components)/GifBox";
+import ProfileButton from "@/app/(components)/Common/ProfileButton";
+import DisplayBox from "@/app/(components)/Common/DisplayBox";
+import GifBox from "@/app/(components)/Common/GifBox";
 
 function LeftPanel() {
   return (

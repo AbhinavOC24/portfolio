@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import icon1 from "../public/static/icon1.svg";
-import icon2 from "../public/static/icon2.svg";
-import icon3 from "../public/static/icon3.svg";
-import { useViewSettings } from "../store/ViewStore";
-import back from "../public/static/Back.svg";
-import root from "../public/static/Root.svg";
+import icon1 from "../../public/static/icon1.svg";
+import icon2 from "../../public/static/icon2.svg";
+import icon3 from "../../public/static/icon3.svg";
+import { useViewSettings } from "../../store/ViewStore";
+import back from "../../public/static/Back.svg";
+import root from "../../public/static/Root.svg";
 
 function IconViewBox() {
   const icons = [icon3, icon2, icon1];

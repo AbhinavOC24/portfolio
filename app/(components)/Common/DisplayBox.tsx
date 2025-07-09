@@ -2,9 +2,9 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
-import { getISTStatus } from "../utils/getTime";
-import clock from "../public/static/Clock.svg";
-import envelope from "../public/static/envelope.svg";
+import { getISTStatus } from "../../utils/getTime";
+import clock from "../../public/static/Clock.svg";
+import envelope from "../../public/static/envelope.svg";
 
 interface propType {
   type: string;

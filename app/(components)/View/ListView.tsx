@@ -19,7 +19,10 @@ const fileSystem: FileSystemNode = {
       "About_me.pdf": "file",
       "Tools.pdf": "file",
     },
-    Projects: { Chatty: "project", Sketchspace: "project" },
+    Projects: {
+      Chatty: "project",
+      // Sketchspace: "project"
+    },
   },
   Spotify_playlists: {
     "Chill.spot": "spotify",

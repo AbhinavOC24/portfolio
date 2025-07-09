@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Pfp from "../public/static/Pfp.jpg";
-import { getISTStatus } from "../utils/getTime";
+import Pfp from "../../public/static/Pfp.jpg";
+import { getISTStatus } from "../../utils/getTime";
 function ProfileButton() {
   const { color } = getISTStatus();
 

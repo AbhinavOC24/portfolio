@@ -6,7 +6,7 @@ const fileSystem = {
     },
     Projects: {
       Chatty: "project",
-      Sketchspace: "project",
+      // Sketchspace: "project",
     },
   },
   Spotify_playlists: {
