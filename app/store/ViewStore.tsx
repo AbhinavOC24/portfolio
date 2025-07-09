@@ -18,5 +18,8 @@ export const useViewSettings = create<ViewState>((set, get) => ({
   path: [],
   setCurrentPath: (path) => set({ path: path }),
   openedFile: null,
-  setOpenedFile: (fileName) => set({ openedFile: fileName }),
+  setOpenedFile: (fileName) => {
+    console.log(fileName);
+    set({ openedFile: fileName });
+  },
 }));
