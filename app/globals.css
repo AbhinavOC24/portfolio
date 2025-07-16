@@ -22,6 +22,7 @@
 /* Base styles */
 body {
   background: var(--background);
+  overflow: hidden;
   color: var(--foreground);
 }
 
