@@ -5,6 +5,7 @@ import Image from "next/image";
 import { getISTStatus } from "../../utils/getTime";
 import clock from "../../public/static/Clock.svg";
 import envelope from "../../public/static/envelope.svg";
+import Link from "next/link";
 
 interface propType {
   type: string;
@@ -16,8 +17,7 @@ function DisplayBox({ type }: propType) {
   useEffect(() => {
     const interval = setInterval(() => {
       setTimeData(getISTStatus());
-    }, 30000); // update every second — can change to 60,000 for minute update
-
+    }, 30000);
     return () => clearInterval(interval);
   }, []);
 
@@ -49,7 +49,18 @@ function DisplayBox({ type }: propType) {
             type !== "Date" ? "text-[#803399]" : "text-black"
           } `}
         >
-          {type === "Date" ? `${hour}:${minute} IST` : "Click Here"}
+          {type === "Date" ? (
+            `${hour}:${minute} IST`
+          ) : (
+            <Link
+              href="https://drive.google.com/file/d/1QQdvKw3GOQPRdqY6AXRHs7kCsFf0XoKr/view?usp=share_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              Click Here
+            </Link>
+          )}
         </div>
       </div>
     </div>
