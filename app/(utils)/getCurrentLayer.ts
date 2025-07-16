@@ -4,7 +4,10 @@ const fileSystem = {
       "About_me.pdf": "file",
       "Tools.pdf": "file",
     },
-    Projects: {},
+    Projects: {
+      Chatty: "project",
+      Sketchspace: "project",
+    },
   },
   Spotify_playlists: {
     "Chill.spot": "spotify",

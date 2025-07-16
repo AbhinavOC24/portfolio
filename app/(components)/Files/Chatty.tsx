@@ -34,7 +34,7 @@ const Chatty = () => {
 
       <div className="absolute bottom-0 left-0 right-0 h-3 bg-gradient-to-t from-[#f9f3fb] to-transparent translate-y-[-44px] pointer-events-none"></div>
 
-      <div className=" pt-4 border-t border-dashed relative">
+      <div className=" pt-4 flex gap-3 border-t border-dashed relative">
         <a
           href="https://chat-app-dqek.onrender.com"
           target="_blank"
@@ -42,6 +42,14 @@ const Chatty = () => {
           className="text-[#803399] hover:underline font-family-pp text-xl"
         >
           View project
+        </a>
+        <a
+          href="https://github.com/AbhinavOC24/chat_app"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#803399] hover:underline font-family-pp text-xl"
+        >
+          Github
         </a>
       </div>
     </div>
