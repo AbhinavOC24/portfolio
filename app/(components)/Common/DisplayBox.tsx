@@ -53,7 +53,7 @@ function DisplayBox({ type }: propType) {
             `${hour}:${minute} IST`
           ) : (
             <Link
-              href="https://drive.google.com/file/d/1QQdvKw3GOQPRdqY6AXRHs7kCsFf0XoKr/view?usp=share_link"
+              href="https://drive.google.com/file/d/1tryj8Op_ufVP_ShDTXQs5P_BVRKXfFcI/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"
