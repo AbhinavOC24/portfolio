@@ -1,19 +1,4 @@
-const fileSystem = {
-  Work: {
-    About: {
-      "About_me.pdf": "file",
-      "Tools.pdf": "file",
-    },
-    Projects: {
-      Chatty: "project",
-      // Sketchspace: "project",
-    },
-  },
-  Spotify_playlists: {
-    "Chill.spot": "spotify",
-  },
-};
-
+import { fileSystem } from "./fileSystemTree";
 export default function getCurrentLayer(path: string[]) {
   let layer: any = fileSystem;
 
