@@ -3,7 +3,7 @@ import SketchSpaceBanner from "../../public/static/SketchSpaceBanner.png";
 
 const SketchSpace = () => {
   return (
-    <div className="relative">
+    <div className="relative h-[740px] flex flex-col">
       <Image src={SketchSpaceBanner} alt="banner" className="mb-4 z-30" />
       <div className="font-family-pp font-bold text-base leading-relaxed h-[450px] overflow-y-auto">
         <p className="mb-3 leading-5 text-xl">

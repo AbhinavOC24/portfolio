@@ -7,6 +7,7 @@ import Tools from "@/app/(components)/Files/Tools";
 import { useViewSettings } from "@/app/store/ViewStore";
 
 import React from "react";
+import ShuttrSpace from "../(components)/Files/ShuttrSpace";
 
 function RightPanel() {
   const { openedFile } = useViewSettings();
@@ -23,6 +24,8 @@ function RightPanel() {
         return <Sketchspace />;
       case "Chatty":
         return <Chatty />;
+      case "ShuttrSpace":
+        return <ShuttrSpace />;
 
       default:
         return null;

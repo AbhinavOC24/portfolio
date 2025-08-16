@@ -16,6 +16,7 @@ export const fileSystem: FileSystem = {
     Projects: {
       Chatty: "project",
       Sketchspace: "project",
+      ShuttrSpace: "project",
     },
   },
   Spotify_playlists: {
@@ -40,4 +41,19 @@ export function getLayerChain(path: string[]): FileSystem[] {
   }
 
   return layers;
+}
+
+//IconView
+export default function getCurrentLayer(path: string[]) {
+  let layer: any = fileSystem;
+
+  for (let part of path) {
+    if (layer && typeof layer === "object" && part in layer) {
+      layer = layer[part];
+    } else {
+      return {};
+    }
+  }
+
+  return layer;
 }

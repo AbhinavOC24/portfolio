@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useViewSettings } from "../../store/ViewStore";
 import Image from "next/image";
-import getCurrentLayer from "../../utils/getCurrentLayer";
+import getCurrentLayer from "../../utils/fileSystemTree";
 
 import Folder from "../../public/static/FOLDER.svg";
 import Music from "../../public/static/Music.svg";
