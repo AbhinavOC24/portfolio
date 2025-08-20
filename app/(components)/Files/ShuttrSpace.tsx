@@ -25,11 +25,12 @@ const ShuttrSpace = () => {
         <p className="font-bold text-xl mt-4 mb-2">Key Features:</p>
         <ul className="list-disc list-inside text-xl space-y-1">
           <li>Browse inspiration feed without login</li>
-          <li>Wallet-gated uploads, tips, and bounties</li>
+          <li>Wallet-gated uploads</li>
+          <li> Infinite Scroll Inspiration Gallery</li>
           <li>Professional portfolio-grade profiles</li>
           <li>Full-quality images stored on IPFS</li>
           <li>Optional on-chain publishing of metadata</li>
-          <li>Real-time bounty challenges & submissions</li>
+          {/* <li>Real-time bounty challenges & submissions</li> */}
         </ul>
       </div>
       <div className="absolute bottom-0 left-0 right-0 h-3 bg-gradient-to-t from-[#f9f3fb] to-transparent translate-y-[-44px] pointer-events-none"></div>
