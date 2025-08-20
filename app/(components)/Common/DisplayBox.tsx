@@ -10,7 +10,8 @@ import Link from "next/link";
 interface propType {
   type: string;
 }
-
+const RESUME_LINK =
+  "https://drive.google.com/file/d/1QQdvKw3GOQPRdqY6AXRHs7kCsFf0XoKr/view?usp=sharing";
 function DisplayBox({ type }: propType) {
   const [timeData, setTimeData] = useState(() => getISTStatus());
 
@@ -53,7 +54,7 @@ function DisplayBox({ type }: propType) {
             `${hour}:${minute} IST`
           ) : (
             <Link
-              href="https://drive.google.com/file/d/1tryj8Op_ufVP_ShDTXQs5P_BVRKXfFcI/view?usp=sharing"
+              href={RESUME_LINK}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"
