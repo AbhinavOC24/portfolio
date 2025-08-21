@@ -11,7 +11,7 @@ interface propType {
   type: string;
 }
 const RESUME_LINK =
-  "https://drive.google.com/file/d/1QQdvKw3GOQPRdqY6AXRHs7kCsFf0XoKr/view?usp=sharing";
+  "https://drive.google.com/file/d/1VXt1jLmDK07RVN8Hz4m4IKYKhkvdmt48/view?usp=sharing";
 function DisplayBox({ type }: propType) {
   const [timeData, setTimeData] = useState(() => getISTStatus());
 
