@@ -17,7 +17,7 @@ export const fileSystem: FileSystem = {
       Chatty: "project",
       Sketchspace: "project",
       ShuttrSpace: "project",
-      sPay: "project",
+      SPay: "project",
     },
   },
   Spotify_playlists: {

@@ -5,7 +5,7 @@ import ChillSpotify from "@/app/(components)/Files/ChillSpotify";
 import Sketchspace from "@/app/(components)/Files/Sketchspace";
 import Tools from "@/app/(components)/Files/Tools";
 import { useViewSettings } from "@/app/store/ViewStore";
-import SPay from "../(components)/Files/sPay";
+import SPay from "../(components)/Files/SPay";
 import React from "react";
 import ShuttrSpace from "../(components)/Files/ShuttrSpace";
 
