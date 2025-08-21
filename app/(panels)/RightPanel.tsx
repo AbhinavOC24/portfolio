@@ -5,7 +5,7 @@ import ChillSpotify from "@/app/(components)/Files/ChillSpotify";
 import Sketchspace from "@/app/(components)/Files/Sketchspace";
 import Tools from "@/app/(components)/Files/Tools";
 import { useViewSettings } from "@/app/store/ViewStore";
-
+import SPay from "../(components)/Files/sPay";
 import React from "react";
 import ShuttrSpace from "../(components)/Files/ShuttrSpace";
 
@@ -26,7 +26,8 @@ function RightPanel() {
         return <Chatty />;
       case "ShuttrSpace":
         return <ShuttrSpace />;
-
+      case "SPay":
+        return <SPay />;
       default:
         return null;
     }
