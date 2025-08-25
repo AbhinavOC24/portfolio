@@ -20,8 +20,8 @@ jobs:
 
       - name: Build and Push Docker image
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/nextjs-app:latest .
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/nextjs-app:latest
+          docker buildx create --use
+          docker buildx build --platform linux/amd64 -t ${{ secrets.DOCKERHUB_USERNAME }}/portfolio:latest . --push
 
       - name: Deploy to EC2
         uses: appleboy/ssh-action@v0.1.10
