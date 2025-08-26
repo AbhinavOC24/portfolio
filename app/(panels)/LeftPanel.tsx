@@ -6,7 +6,7 @@ import ScaledLayout from "../(components)/ScaledLayout";
 
 function LeftPanel() {
   return (
-    <div className="h-auto w-full  ">
+    <div className="h-full w-full  ">
       <ProfileButton />
       <hr className=" mb-[20px] mt-[20px] border-dashed" />
       <div className="flex gap-[17px]">
