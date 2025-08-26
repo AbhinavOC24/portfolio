@@ -2,12 +2,13 @@ import React from "react";
 import ProfileButton from "@/app/(components)/Common/ProfileButton";
 import DisplayBox from "@/app/(components)/Common/DisplayBox";
 import GifBox from "@/app/(components)/Common/GifBox";
+import ScaledLayout from "../(components)/ScaledLayout";
 
 function LeftPanel() {
   return (
-    <div className=" h-[725px] w-[381px] ">
+    <div className="h-auto w-full  ">
       <ProfileButton />
-      <hr className="mt-[18px] mb-[27px] border-dashed" />
+      <hr className=" mb-[20px] mt-[20px] border-dashed" />
       <div className="flex gap-[17px]">
         <DisplayBox type="Date" />
         <DisplayBox type="Resume" />
@@ -15,7 +16,7 @@ function LeftPanel() {
       <GifBox />
 
       <hr className="mt-[27px] mb-[18px] border-dashed" />
-      <div className="font-family-pp font-bold text-[20px] leading-5 tracking-light">
+      <div className="font-family-pp font-bold text-xl leading-5 tracking-light">
         I combine design sense with web development skills to build clean,
         functional interfaces. As I learn more about Web3, I enjoy creating
         things that are both useful and visually clear, while keeping up with

@@ -26,7 +26,7 @@ function DisplayBox({ type }: propType) {
 
   return (
     <div
-      className={`flex h-[79px] w-[190px] items-center justify-center  pl-[22px] pr-[72px] border-dashed py-0 relative rounded-[19px] overflow-hidden border  border-black ${
+      className={`flex h-[79px] w-full items-center justify-center  pl-[22px] pr-[72px] border-dashed py-0 relative rounded-[19px] overflow-hidden border  border-black ${
         type != "Date" ? "hover:border-[#803399]" : ""
       }`}
     >

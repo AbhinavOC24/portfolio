@@ -21,11 +21,17 @@
 
 /* Base styles */
 body {
+  overflow: auto;
   background: var(--background);
-  overflow: hidden;
   color: var(--foreground);
 }
 
+/* Only on large screens and above */
+@media (min-width: 1024px) {
+  body {
+    overflow: hidden;
+  }
+}
 /* Custom shadow class */
 .my-shadow {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3),

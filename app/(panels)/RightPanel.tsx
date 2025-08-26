@@ -34,7 +34,7 @@ function RightPanel() {
   };
   return (
     <>
-      <div className=" h-[725px] w-[402px] ">
+      <div className=" h-auto w-full ">
         <RenderComponent />
       </div>
     </>

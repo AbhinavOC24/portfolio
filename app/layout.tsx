@@ -92,7 +92,7 @@ export default function RootLayout({
       className={`${neueMontreal.variable} ${ppNeueBit.variable} ${geistSans.variable} ${geistMono.variable}`}
     >
       <body className="antialiased">
-        <main className="pt-[20px] px-[22px] h-screen overflow-hidden">
+        <main className="pt-[20px] px-[22px] h-screen md:overflow-hidden">
           {children}
         </main>
       </body>

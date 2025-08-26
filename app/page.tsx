@@ -4,10 +4,11 @@ import LeftPanel from "./(panels)/LeftPanel";
 import MiddlePanel from "./(panels)/MiddlePanel";
 import RightPanel from "./(panels)/RightPanel";
 import FloatingGrapes from "./(components)/Common/FloatingGrapes";
+import ScaledLayout from "./(components)/ScaledLayout";
 export default function Home() {
   return (
-    <>
-      <div className=" flex w-screen ">
+    <div className="flex flex-col">
+      <div className=" flex flex-col md:flex-row w-full max-w-[1400px] mx-auto   ">
         <LeftPanel />
         <LineBreak />
         <MiddlePanel />
@@ -15,7 +16,7 @@ export default function Home() {
         <RightPanel />
         <FloatingGrapes />
       </div>
-      <hr className=" border-dashed mt-[25px]" />
-    </>
+      <hr className="border-dashed w-full" />
+    </div>
   );
 }
