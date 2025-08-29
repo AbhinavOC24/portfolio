@@ -7,7 +7,7 @@ function ProfileButton() {
   const { color } = getISTStatus();
 
   return (
-    <div className="rounded-xl pl-5 pt-5 w-full h-32 my-shadow flex flex-col z-10">
+    <div className="rounded-xl pl-5 pt-5 w-full h-32 my-shadow  flex flex-col ">
       <div className="flex">
         <div className="w-20 h-20 rounded-[19px] relative ">
           <Image
