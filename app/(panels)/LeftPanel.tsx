@@ -6,24 +6,24 @@ import ScaledLayout from "../(components)/ScaledLayout";
 
 function LeftPanel() {
   return (
-    <div className="h-full w-full  ">
+    <div className="h-100% w-full  ">
       <ProfileButton />
-      <hr className=" mb-[20px] mt-[20px] border-dashed" />
-      <div className="flex gap-[17px]">
+      <hr className=" mb-5 mt-5 border-dashed" />
+      <div className="flex gap-4">
         <DisplayBox type="Date" />
         <DisplayBox type="Resume" />
       </div>
       <GifBox />
 
-      <hr className="mt-[27px] mb-[18px] border-dashed" />
-      <div className="font-family-pp font-bold text-xl leading-5 tracking-light">
-        I combine design sense with web development skills to build clean,
-        functional interfaces. As I learn more about Web3, I enjoy creating
-        things that are both useful and visually clear, while keeping up with
-        how the space is evolving.
-      </div>
-      <div className="font-family-neue font-bold mt-[150px]">
-        Uttarakhand, IND
+      <hr className="mt-7  border-dashed" />
+      <div className="flex flex-col mt-4 justify-between h-56">
+        <div className="font-family-pp font-bold text-xl leading-5 tracking-light">
+          I combine design sense with web development skills to build clean,
+          functional interfaces. As I learn more about Web3, I enjoy creating
+          things that are both useful and visually clear, while keeping up with
+          how the space is evolving.
+        </div>
+        <div className="font-family-neue font-bold  ">Uttarakhand, IND</div>
       </div>
     </div>
   );

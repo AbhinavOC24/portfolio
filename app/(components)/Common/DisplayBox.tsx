@@ -26,27 +26,27 @@ function DisplayBox({ type }: propType) {
 
   return (
     <div
-      className={`flex h-[79px] w-full items-center justify-center  pl-[22px] pr-[72px] border-dashed py-0 relative rounded-[19px] overflow-hidden border  border-black ${
+      className={`flex h-[79px] w-full items-center pl-6 pr-18 border-dashed py-0 relative rounded-2xl overflow-hidden border  border-black ${
         type != "Date" ? "hover:border-[#803399]" : ""
       }`}
     >
       <div className="flex flex-col items-start justify-center gap-3 relative ">
         <div className="flex  items-center gap-1.5 relative ">
           <Image
-            className="relative w-[14px] h-[14px] mt-[-0.25px] mb-[2px] ml-[-0.50px]"
+            className="relative w-3.5 h-3.5  mb-0.5 "
             alt="Clock"
             src={type === "Date" ? clock : envelope}
           />
 
           <div
-            className={`relative w-fit mt-[-1.00px]  font-family-pp  text-[#888888] text-[18px]  leading-[normal] whitespace-nowrap`}
+            className={`relative w-fit  font-family-pp  text-[#888888] text-lg  leading-[normal] whitespace-nowrap`}
           >
             {type === "Date" ? `${day}` : "Resume"}
           </div>
         </div>
 
         <div
-          className={`relative w-[90px] mb-[2px] [font-family:'Neue_Montreal-Bold',Helvetica] font-bold text-lg tracking-[0] leading-[normal] whitespace-nowrap ${
+          className={`relative w-24 mb-0.5 [font-family:'Neue_Montreal-Bold',Helvetica] font-bold text-lg tracking-[0] leading-[normal] whitespace-nowrap ${
             type !== "Date" ? "text-[#803399]" : "text-black"
           } `}
         >

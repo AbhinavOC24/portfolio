@@ -10,10 +10,12 @@ function FileExplorer() {
   const { currentView } = useViewSettings();
 
   return (
-    <div>
+    <div className="mb-8">
       {view[currentView] === "icon" && <IconView />}
       {view[currentView] === "list" && <ListView />}
       {view[currentView] === "tree" && <TreeView />}
+
+      <hr className="border-dashed mt-5 md:hidden " />
     </div>
   );
 }
