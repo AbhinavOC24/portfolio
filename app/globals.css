@@ -37,6 +37,6 @@ body {
 .my-shadow {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3),
     inset -4px -4px 10px rgba(0, 0, 0, 0.2),
-    -4px -4px 40px rgba(240, 224, 245, 1),
+    -4px -4px 10px rgba(240, 224, 245, 1),
     inset 4px 4px 20px rgba(224, 212, 212, 0.3);
 }
